@@ -1,0 +1,1202 @@
+# vsim -c controller_tb -do "run -all;" 
+# Start time: 21:42:59 on Mar 18,2018
+# ** Note: (vsim-3812) Design is being optimized...
+# //  Questa Sim-64
+# //  Version 10.4c linux_x86_64 Jul 19 2015
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# Loading sv_std.std
+# Loading work.verifclass(fast)
+# Loading work.controller_tb(fast)
+# Loading work.DDR4Interface(fast__1)
+# Loading work.FSM_wrapper(fast)
+# Loading work.MemContFSM(fast)
+# Loading work.Memory(fast)
+# Loading work.MemoryFSM(fast)
+# Loading work.ControllerIF(fast__1)
+# Loading work.ControllerIF(fast)
+# run -all
+#                    0	controller_tb.dut.F	 STATE: Reset
+#                    0	MRS
+#                    0	controller_tb.dut.F	 STATE: Reset
+#                    0	MRS
+#                    0	DataBus:xxxxxxxxxxxxxxxx
+#                    5	DataBus:zzzzzzzzzzzzzzzz
+#                  200	controller_tb.dut.F	 STATE: Reset
+#                  200	MRS
+#                  220	controller_tb.dut.F	 STATE: LoadTimer
+#                  240	Request Issued to Address:00dbc540	 DONE=0
+# 
+#                  240	controller_tb.dut.F	 STATE: Activate
+#                  240	ACTIVATE	Row Address:000000001101101
+#                  260	ROW:000000001101101	BANK:3	BG:1
+#                  260	controller_tb.dut.F	 STATE: Wait
+#                  260	DESELECT
+#                  280	controller_tb.dut.F	 STATE: Wait
+#                  280	DESELECT
+#                  560	controller_tb.dut.F	 STATE: Write
+#                  560	WRITE
+# TRCD=         16
+# tccd:         29	bgprev=x	bg=1
+#                  580	The cloumn address read is: 1000101100
+# Address Calculated:00dbc540
+# 
+#                  580	controller_tb.dut.F	 STATE: Done
+#                  580	DESELECT
+#                  600	controller_tb.dut.F	 STATE: Done
+#                  600	DESELECT
+#                  600	controller_tb.dut.F	 STATE: Done
+#                  600	DESELECT
+#                  620	controller_tb.dut.F	 STATE: LoadTimer
+#                  640	Request Issued to Address:00e61480	 DONE=0
+# 
+#                  640	controller_tb.dut.F	 STATE: Activate
+#                  640	ACTIVATE	Row Address:000000001110011
+#                  660	ROW:000000001110011	BANK:0	BG:2
+#                  660	controller_tb.dut.F	 STATE: Wait
+#                  660	DESELECT
+#                  680	controller_tb.dut.F	 STATE: Wait
+#                  680	DESELECT
+#                  885	controller_tb.dut.F.WC	count=0
+#                  885	DataBus:0000000000000045
+#                  885	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000045	DataBus is:0000000000000045
+#                  890	controller_tb.mem.RM	count=0
+#                  890	controller_tb.mem.RM	READ	DataBus is:0000000000000045	DataHost is:zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz0000000000000045	count=1
+#                  895	controller_tb.dut.F.WC	count=1
+#                  895	DataBus:0000000000000000
+#                  895	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                  900	controller_tb.mem.RM	count=1
+#                  900	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz00000000000000000000000000000045	count=2
+#                  905	controller_tb.dut.F.WC	count=2
+#                  905	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                  910	controller_tb.mem.RM	count=2
+#                  910	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz000000000000000000000000000000000000000000000045	count=3
+#                  915	controller_tb.dut.F.WC	count=3
+#                  915	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                  920	controller_tb.mem.RM	count=3
+#                  920	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz0000000000000000000000000000000000000000000000000000000000000045	count=4
+#                  925	controller_tb.dut.F.WC	count=4
+#                  925	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                  930	controller_tb.mem.RM	count=4
+#                  930	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz00000000000000000000000000000000000000000000000000000000000000000000000000000045	count=5
+#                  935	controller_tb.dut.F.WC	count=5
+#                  935	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                  940	controller_tb.mem.RM	count=5
+#                  940	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000045	count=6
+#                  945	controller_tb.dut.F.WC	count=6
+#                  945	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                  950	controller_tb.mem.RM	count=6
+#                  950	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:zzzzzzzzzzzzzzzz0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000045	count=7
+#                  955	controller_tb.dut.F.WC	count=7
+#                  955	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                  960	controller_tb.mem.RM	count=7
+#                  960	controller_tb.dut.F	 STATE: Write
+#                  960	WRITE
+#                  960	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000045	count=0
+#                  965	DataBus:zzzzzzzzzzzzzzzz
+# TRCD=         16
+# tccd:         20	bgprev=1	bg=2
+#                  980	The cloumn address read is: 0010100100
+# Address Calculated:00e61480
+# 
+#                  980	controller_tb.dut.F	 STATE: Done
+#                  980	DESELECT
+#                 1000	controller_tb.dut.F	 STATE: Done
+#                 1000	DESELECT
+#                 1000	controller_tb.dut.F	 STATE: Done
+#                 1000	DESELECT
+#                 1020	controller_tb.dut.F	 STATE: LoadTimer
+#                 1040	Request Issued to Address:005c6540	 DONE=0
+# 
+#                 1040	controller_tb.dut.F	 STATE: Activate
+#                 1040	ACTIVATE	Row Address:000000000101110
+#                 1060	ROW:000000000101110	BANK:0	BG:1
+#                 1060	controller_tb.dut.F	 STATE: Wait
+#                 1060	DESELECT
+#                 1080	controller_tb.dut.F	 STATE: Wait
+#                 1080	DESELECT
+#                 1285	controller_tb.dut.F.WC	count=0
+#                 1285	DataBus:000000000000001b
+#                 1285	controller_tb.dut.F.WC	WRITE	DataHost is:000000000000001b	DataBus is:000000000000001b
+#                 1290	controller_tb.mem.RM	count=0
+#                 1290	controller_tb.mem.RM	READ	DataBus is:000000000000001b	DataHost is:0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001b	count=1
+#                 1295	controller_tb.dut.F.WC	count=1
+#                 1295	DataBus:0000000000000000
+#                 1295	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 1300	controller_tb.mem.RM	count=1
+#                 1300	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001b	count=2
+#                 1305	controller_tb.dut.F.WC	count=2
+#                 1305	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 1310	controller_tb.mem.RM	count=2
+#                 1310	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001b	count=3
+#                 1315	controller_tb.dut.F.WC	count=3
+#                 1315	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 1320	controller_tb.mem.RM	count=3
+#                 1320	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001b	count=4
+#                 1325	controller_tb.dut.F.WC	count=4
+#                 1325	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 1330	controller_tb.mem.RM	count=4
+#                 1330	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001b	count=5
+#                 1335	controller_tb.dut.F.WC	count=5
+#                 1335	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 1340	controller_tb.mem.RM	count=5
+#                 1340	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001b	count=6
+#                 1345	controller_tb.dut.F.WC	count=6
+#                 1345	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 1350	controller_tb.mem.RM	count=6
+#                 1350	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001b	count=7
+#                 1355	controller_tb.dut.F.WC	count=7
+#                 1355	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 1360	controller_tb.mem.RM	count=7
+#                 1360	controller_tb.dut.F	 STATE: Write
+#                 1360	WRITE
+#                 1360	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001b	count=0
+#                 1365	DataBus:zzzzzzzzzzzzzzzz
+# TRCD=         16
+# tccd:         20	bgprev=2	bg=1
+#                 1380	The cloumn address read is: 1100101100
+# Address Calculated:005c6540
+# 
+#                 1380	controller_tb.dut.F	 STATE: Done
+#                 1380	DESELECT
+#                 1400	controller_tb.dut.F	 STATE: Done
+#                 1400	DESELECT
+#                 1400	controller_tb.dut.F	 STATE: Done
+#                 1400	DESELECT
+#                 1420	controller_tb.dut.F	 STATE: LoadTimer
+#                 1440	Request Issued to Address:00b0f300	 DONE=0
+# 
+#                 1440	controller_tb.dut.F	 STATE: Activate
+#                 1440	ACTIVATE	Row Address:000000001011000
+#                 1460	ROW:000000001011000	BANK:1	BG:0
+#                 1460	controller_tb.dut.F	 STATE: Wait
+#                 1460	DESELECT
+#                 1480	controller_tb.dut.F	 STATE: Wait
+#                 1480	DESELECT
+#                 1685	controller_tb.dut.F.WC	count=0
+#                 1685	DataBus:0000000000000046
+#                 1685	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000046	DataBus is:0000000000000046
+#                 1690	controller_tb.mem.RM	count=0
+#                 1690	controller_tb.mem.RM	READ	DataBus is:0000000000000046	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000046	count=1
+#                 1695	controller_tb.dut.F.WC	count=1
+#                 1695	DataBus:0000000000000000
+#                 1695	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 1700	controller_tb.mem.RM	count=1
+#                 1700	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000046	count=2
+#                 1705	controller_tb.dut.F.WC	count=2
+#                 1705	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 1710	controller_tb.mem.RM	count=2
+#                 1710	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000046	count=3
+#                 1715	controller_tb.dut.F.WC	count=3
+#                 1715	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 1720	controller_tb.mem.RM	count=3
+#                 1720	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000046	count=4
+#                 1725	controller_tb.dut.F.WC	count=4
+#                 1725	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 1730	controller_tb.mem.RM	count=4
+#                 1730	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000046	count=5
+#                 1735	controller_tb.dut.F.WC	count=5
+#                 1735	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 1740	controller_tb.mem.RM	count=5
+#                 1740	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000046	count=6
+#                 1745	controller_tb.dut.F.WC	count=6
+#                 1745	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 1750	controller_tb.mem.RM	count=6
+#                 1750	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000046	count=7
+#                 1755	controller_tb.dut.F.WC	count=7
+#                 1755	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 1760	controller_tb.mem.RM	count=7
+#                 1760	controller_tb.dut.F	 STATE: Write
+#                 1760	WRITE
+#                 1760	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000046	count=0
+#                 1765	DataBus:zzzzzzzzzzzzzzzz
+# TRCD=         16
+# tccd:         20	bgprev=1	bg=0
+#                 1780	The cloumn address read is: 1110011000
+# Address Calculated:00b0f300
+# 
+#                 1780	controller_tb.dut.F	 STATE: Done
+#                 1780	DESELECT
+#                 1800	controller_tb.dut.F	 STATE: Done
+#                 1800	DESELECT
+#                 1800	controller_tb.dut.F	 STATE: Done
+#                 1800	DESELECT
+#                 1820	controller_tb.dut.F	 STATE: LoadTimer
+#                 1840	Request Issued to Address:00e00880	 DONE=0
+# 
+#                 1840	controller_tb.dut.F	 STATE: Activate
+#                 1840	ACTIVATE	Row Address:000000001110000
+#                 1860	controller_tb.dut.F	 STATE: Wait
+#                 1860	DESELECT
+#                 1880	controller_tb.dut.F	 STATE: Wait
+#                 1880	DESELECT
+#                 2085	controller_tb.dut.F.WC	count=0
+#                 2085	DataBus:0000000000000023
+#                 2085	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000023	DataBus is:0000000000000023
+#                 2090	controller_tb.mem.RM	count=0
+#                 2090	controller_tb.mem.RM	READ	DataBus is:0000000000000023	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000023	count=1
+#                 2095	controller_tb.dut.F.WC	count=1
+#                 2095	DataBus:0000000000000000
+#                 2095	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 2100	controller_tb.mem.RM	count=1
+#                 2100	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000023	count=2
+#                 2105	controller_tb.dut.F.WC	count=2
+#                 2105	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 2110	controller_tb.mem.RM	count=2
+#                 2110	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000023	count=3
+#                 2115	controller_tb.dut.F.WC	count=3
+#                 2115	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 2120	controller_tb.mem.RM	count=3
+#                 2120	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000023	count=4
+#                 2125	controller_tb.dut.F.WC	count=4
+#                 2125	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 2130	controller_tb.mem.RM	count=4
+#                 2130	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000023	count=5
+#                 2135	controller_tb.dut.F.WC	count=5
+#                 2135	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 2140	controller_tb.mem.RM	count=5
+#                 2140	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000023	count=6
+#                 2145	controller_tb.dut.F.WC	count=6
+#                 2145	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 2150	controller_tb.mem.RM	count=6
+#                 2150	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000023	count=7
+#                 2155	controller_tb.dut.F.WC	count=7
+#                 2155	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 2160	controller_tb.mem.RM	count=7
+#                 2160	controller_tb.dut.F	 STATE: Write
+#                 2160	WRITE
+#                 2160	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000023	count=0
+#                 2165	DataBus:zzzzzzzzzzzzzzzz
+# TRCD=         16
+# tccd:         20	bgprev=0	bg=2
+#                 2180	The cloumn address read is: 0001000101
+# Address Calculated:00e60880
+# 
+#                 2180	controller_tb.dut.F	 STATE: Done
+#                 2180	DESELECT
+#                 2200	controller_tb.dut.F	 STATE: Done
+#                 2200	DESELECT
+#                 2200	controller_tb.dut.F	 STATE: Done
+#                 2200	DESELECT
+#                 2220	controller_tb.dut.F	 STATE: LoadTimer
+#                 2240	Request Issued to Address:0093da00	 DONE=0
+# 
+#                 2240	controller_tb.dut.F	 STATE: Activate
+#                 2240	ACTIVATE	Row Address:000000001001001
+#                 2260	ROW:000000001001001	BANK:3	BG:0
+#                 2260	controller_tb.dut.F	 STATE: Wait
+#                 2260	DESELECT
+#                 2280	controller_tb.dut.F	 STATE: Wait
+#                 2280	DESELECT
+#                 2485	controller_tb.dut.F.WC	count=0
+#                 2485	DataBus:0000000000000062
+#                 2485	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000062	DataBus is:0000000000000062
+#                 2490	controller_tb.mem.RM	count=0
+#                 2490	controller_tb.mem.RM	READ	DataBus is:0000000000000062	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000062	count=1
+#                 2495	controller_tb.dut.F.WC	count=1
+#                 2495	DataBus:0000000000000000
+#                 2495	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 2500	controller_tb.mem.RM	count=1
+#                 2500	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000062	count=2
+#                 2505	controller_tb.dut.F.WC	count=2
+#                 2505	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 2510	controller_tb.mem.RM	count=2
+#                 2510	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000062	count=3
+#                 2515	controller_tb.dut.F.WC	count=3
+#                 2515	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 2520	controller_tb.mem.RM	count=3
+#                 2520	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000062	count=4
+#                 2525	controller_tb.dut.F.WC	count=4
+#                 2525	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 2530	controller_tb.mem.RM	count=4
+#                 2530	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000062	count=5
+#                 2535	controller_tb.dut.F.WC	count=5
+#                 2535	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 2540	controller_tb.mem.RM	count=5
+#                 2540	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000062	count=6
+#                 2545	controller_tb.dut.F.WC	count=6
+#                 2545	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 2550	controller_tb.mem.RM	count=6
+#                 2550	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000062	count=7
+#                 2555	controller_tb.dut.F.WC	count=7
+#                 2555	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 2560	controller_tb.mem.RM	count=7
+#                 2560	controller_tb.dut.F	 STATE: Write
+#                 2560	WRITE
+#                 2560	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000062	count=0
+#                 2565	DataBus:zzzzzzzzzzzzzzzz
+# TRCD=         16
+# tccd:         20	bgprev=2	bg=0
+#                 2580	The cloumn address read is: 1011010001
+# Address Calculated:0093da00
+# 
+#                 2580	controller_tb.dut.F	 STATE: Done
+#                 2580	DESELECT
+#                 2600	controller_tb.dut.F	 STATE: Done
+#                 2600	DESELECT
+#                 2600	controller_tb.dut.F	 STATE: Done
+#                 2600	DESELECT
+#                 2620	controller_tb.dut.F	 STATE: LoadTimer
+#                 2640	Request Issued to Address:00d1ecc0	 DONE=0
+# 
+#                 2640	controller_tb.dut.F	 STATE: Activate
+#                 2640	ACTIVATE	Row Address:000000001101000
+#                 2660	ROW:000000001101000	BANK:3	BG:3
+#                 2660	controller_tb.dut.F	 STATE: Wait
+#                 2660	DESELECT
+#                 2680	controller_tb.dut.F	 STATE: Wait
+#                 2680	DESELECT
+#                 2885	controller_tb.dut.F.WC	count=0
+#                 2885	DataBus:0000000000000061
+#                 2885	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000061	DataBus is:0000000000000061
+#                 2890	controller_tb.mem.RM	count=0
+#                 2890	controller_tb.mem.RM	READ	DataBus is:0000000000000061	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000061	count=1
+#                 2895	controller_tb.dut.F.WC	count=1
+#                 2895	DataBus:0000000000000000
+#                 2895	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 2900	controller_tb.mem.RM	count=1
+#                 2900	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000061	count=2
+#                 2905	controller_tb.dut.F.WC	count=2
+#                 2905	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 2910	controller_tb.mem.RM	count=2
+#                 2910	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000061	count=3
+#                 2915	controller_tb.dut.F.WC	count=3
+#                 2915	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 2920	controller_tb.mem.RM	count=3
+#                 2920	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000061	count=4
+#                 2925	controller_tb.dut.F.WC	count=4
+#                 2925	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 2930	controller_tb.mem.RM	count=4
+#                 2930	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000061	count=5
+#                 2935	controller_tb.dut.F.WC	count=5
+#                 2935	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 2940	controller_tb.mem.RM	count=5
+#                 2940	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000061	count=6
+#                 2945	controller_tb.dut.F.WC	count=6
+#                 2945	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 2950	controller_tb.mem.RM	count=6
+#                 2950	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000061	count=7
+#                 2955	controller_tb.dut.F.WC	count=7
+#                 2955	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 2960	controller_tb.mem.RM	count=7
+#                 2960	controller_tb.dut.F	 STATE: Write
+#                 2960	WRITE
+#                 2960	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000061	count=0
+#                 2965	DataBus:zzzzzzzzzzzzzzzz
+# TRCD=         16
+# tccd:         20	bgprev=0	bg=3
+#                 2980	The cloumn address read is: 1101100001
+# Address Calculated:00d1ecc0
+# 
+#                 2980	controller_tb.dut.F	 STATE: Done
+#                 2980	DESELECT
+#                 3000	controller_tb.dut.F	 STATE: Done
+#                 3000	DESELECT
+#                 3000	controller_tb.dut.F	 STATE: Done
+#                 3000	DESELECT
+#                 3020	controller_tb.dut.F	 STATE: LoadTimer
+#                 3040	Request Issued to Address:0084fa00	 DONE=0
+# 
+#                 3040	controller_tb.dut.F	 STATE: Activate
+#                 3040	ACTIVATE	Row Address:000000001000010
+#                 3060	controller_tb.dut.F	 STATE: Wait
+#                 3060	DESELECT
+#                 3080	controller_tb.dut.F	 STATE: Wait
+#                 3080	DESELECT
+#                 3285	controller_tb.dut.F.WC	count=0
+#                 3285	DataBus:000000000000000c
+#                 3285	controller_tb.dut.F.WC	WRITE	DataHost is:000000000000000c	DataBus is:000000000000000c
+#                 3290	controller_tb.mem.RM	count=0
+#                 3290	controller_tb.mem.RM	READ	DataBus is:000000000000000c	DataHost is:0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c	count=1
+#                 3295	controller_tb.dut.F.WC	count=1
+#                 3295	DataBus:0000000000000000
+#                 3295	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 3300	controller_tb.mem.RM	count=1
+#                 3300	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c	count=2
+#                 3305	controller_tb.dut.F.WC	count=2
+#                 3305	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 3310	controller_tb.mem.RM	count=2
+#                 3310	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c	count=3
+#                 3315	controller_tb.dut.F.WC	count=3
+#                 3315	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 3320	controller_tb.mem.RM	count=3
+#                 3320	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c	count=4
+#                 3325	controller_tb.dut.F.WC	count=4
+#                 3325	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 3330	controller_tb.mem.RM	count=4
+#                 3330	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c	count=5
+#                 3335	controller_tb.dut.F.WC	count=5
+#                 3335	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 3340	controller_tb.mem.RM	count=5
+#                 3340	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c	count=6
+#                 3345	controller_tb.dut.F.WC	count=6
+#                 3345	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 3350	controller_tb.mem.RM	count=6
+#                 3350	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c	count=7
+#                 3355	controller_tb.dut.F.WC	count=7
+#                 3355	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 3360	controller_tb.mem.RM	count=7
+#                 3360	controller_tb.dut.F	 STATE: Write
+#                 3360	WRITE
+#                 3360	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c	count=0
+#                 3365	DataBus:zzzzzzzzzzzzzzzz
+# TRCD=         16
+# tccd:         20	bgprev=3	bg=0
+#                 3380	The cloumn address read is: 1111010001
+# Address Calculated:00b0fa00
+# 
+#                 3380	controller_tb.dut.F	 STATE: Done
+#                 3380	DESELECT
+#                 3400	controller_tb.dut.F	 STATE: Done
+#                 3400	DESELECT
+#                 3400	controller_tb.dut.F	 STATE: Done
+#                 3400	DESELECT
+#                 3420	controller_tb.dut.F	 STATE: LoadTimer
+#                 3440	Request Issued to Address:003c42c0	 DONE=0
+# 
+#                 3440	controller_tb.dut.F	 STATE: Activate
+#                 3440	ACTIVATE	Row Address:000000000011110
+#                 3460	ROW:000000000011110	BANK:0	BG:3
+#                 3460	controller_tb.dut.F	 STATE: Wait
+#                 3460	DESELECT
+#                 3480	controller_tb.dut.F	 STATE: Wait
+#                 3480	DESELECT
+#                 3685	controller_tb.dut.F.WC	count=0
+#                 3685	DataBus:0000000000000048
+#                 3685	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000048	DataBus is:0000000000000048
+#                 3690	controller_tb.mem.RM	count=0
+#                 3690	controller_tb.mem.RM	READ	DataBus is:0000000000000048	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000048	count=1
+#                 3695	controller_tb.dut.F.WC	count=1
+#                 3695	DataBus:0000000000000000
+#                 3695	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 3700	controller_tb.mem.RM	count=1
+#                 3700	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000048	count=2
+#                 3705	controller_tb.dut.F.WC	count=2
+#                 3705	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 3710	controller_tb.mem.RM	count=2
+#                 3710	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000048	count=3
+#                 3715	controller_tb.dut.F.WC	count=3
+#                 3715	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 3720	controller_tb.mem.RM	count=3
+#                 3720	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000048	count=4
+#                 3725	controller_tb.dut.F.WC	count=4
+#                 3725	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 3730	controller_tb.mem.RM	count=4
+#                 3730	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000048	count=5
+#                 3735	controller_tb.dut.F.WC	count=5
+#                 3735	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 3740	controller_tb.mem.RM	count=5
+#                 3740	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000048	count=6
+#                 3745	controller_tb.dut.F.WC	count=6
+#                 3745	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 3750	controller_tb.mem.RM	count=6
+#                 3750	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000048	count=7
+#                 3755	controller_tb.dut.F.WC	count=7
+#                 3755	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 3760	controller_tb.mem.RM	count=7
+#                 3760	controller_tb.dut.F	 STATE: Write
+#                 3760	WRITE
+#                 3760	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000048	count=0
+#                 3765	DataBus:zzzzzzzzzzzzzzzz
+# TRCD=         16
+# tccd:         20	bgprev=0	bg=3
+#                 3780	The cloumn address read is: 1000010110
+# Address Calculated:003c42c0
+# 
+#                 3780	controller_tb.dut.F	 STATE: Done
+#                 3780	DESELECT
+#                 3800	controller_tb.dut.F	 STATE: Done
+#                 3800	DESELECT
+#                 3800	controller_tb.dut.F	 STATE: Done
+#                 3800	DESELECT
+#                 3820	controller_tb.dut.F	 STATE: LoadTimer
+#                 3840	Request Issued to Address:0087d9c0	 DONE=0
+# 
+#                 3840	controller_tb.dut.F	 STATE: Activate
+#                 3840	ACTIVATE	Row Address:000000001000011
+#                 3860	controller_tb.dut.F	 STATE: Wait
+#                 3860	DESELECT
+#                 3880	controller_tb.dut.F	 STATE: Wait
+#                 3880	DESELECT
+#                 4085	controller_tb.dut.F.WC	count=0
+#                 4085	DataBus:0000000000000018
+#                 4085	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000018	DataBus is:0000000000000018
+#                 4090	controller_tb.mem.RM	count=0
+#                 4090	controller_tb.mem.RM	READ	DataBus is:0000000000000018	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000018	count=1
+#                 4095	controller_tb.dut.F.WC	count=1
+#                 4095	DataBus:0000000000000000
+#                 4095	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 4100	controller_tb.mem.RM	count=1
+#                 4100	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000018	count=2
+#                 4105	controller_tb.dut.F.WC	count=2
+#                 4105	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 4110	controller_tb.mem.RM	count=2
+#                 4110	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000018	count=3
+#                 4115	controller_tb.dut.F.WC	count=3
+#                 4115	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 4120	controller_tb.mem.RM	count=3
+#                 4120	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000018	count=4
+#                 4125	controller_tb.dut.F.WC	count=4
+#                 4125	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 4130	controller_tb.mem.RM	count=4
+#                 4130	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000018	count=5
+#                 4135	controller_tb.dut.F.WC	count=5
+#                 4135	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 4140	controller_tb.mem.RM	count=5
+#                 4140	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000018	count=6
+#                 4145	controller_tb.dut.F.WC	count=6
+#                 4145	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 4150	controller_tb.mem.RM	count=6
+#                 4150	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000018	count=7
+#                 4155	controller_tb.dut.F.WC	count=7
+#                 4155	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 4160	controller_tb.mem.RM	count=7
+#                 4160	controller_tb.dut.F	 STATE: Write
+#                 4160	WRITE
+#                 4160	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000018	count=0
+#                 4165	DataBus:zzzzzzzzzzzzzzzz
+# TRCD=         16
+# tccd:         20	bgprev=3	bg=3
+#                 4180	The cloumn address read is: 1011001110
+# Address Calculated:00d1d9c0
+# 
+#                 4180	controller_tb.dut.F	 STATE: Done
+#                 4180	DESELECT
+#                 4200	controller_tb.dut.F	 STATE: Done
+#                 4200	DESELECT
+#                 4200	controller_tb.dut.F	 STATE: Done
+#                 4200	DESELECT
+#                 4220	controller_tb.dut.F	 STATE: LoadTimer
+#                 4240	Request Issued to Address:0018aac0	 DONE=0
+# 
+#                 4240	controller_tb.dut.F	 STATE: Activate
+#                 4240	ACTIVATE	Row Address:000000000001100
+#                 4260	ROW:000000000001100	BANK:1	BG:3
+#                 4260	controller_tb.dut.F	 STATE: Wait
+#                 4260	DESELECT
+#                 4280	controller_tb.dut.F	 STATE: Wait
+#                 4280	DESELECT
+#                 4485	controller_tb.dut.F.WC	count=0
+#                 4485	DataBus:000000000000003e
+#                 4485	controller_tb.dut.F.WC	WRITE	DataHost is:000000000000003e	DataBus is:000000000000003e
+#                 4490	controller_tb.mem.RM	count=0
+#                 4490	controller_tb.mem.RM	READ	DataBus is:000000000000003e	DataHost is:0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003e	count=1
+#                 4495	controller_tb.dut.F.WC	count=1
+#                 4495	DataBus:0000000000000000
+#                 4495	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 4500	controller_tb.mem.RM	count=1
+#                 4500	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003e	count=2
+#                 4505	controller_tb.dut.F.WC	count=2
+#                 4505	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 4510	controller_tb.mem.RM	count=2
+#                 4510	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003e	count=3
+#                 4515	controller_tb.dut.F.WC	count=3
+#                 4515	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 4520	controller_tb.mem.RM	count=3
+#                 4520	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003e	count=4
+#                 4525	controller_tb.dut.F.WC	count=4
+#                 4525	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 4530	controller_tb.mem.RM	count=4
+#                 4530	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003e	count=5
+#                 4535	controller_tb.dut.F.WC	count=5
+#                 4535	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 4540	controller_tb.mem.RM	count=5
+#                 4540	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003e	count=6
+#                 4545	controller_tb.dut.F.WC	count=6
+#                 4545	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 4550	controller_tb.mem.RM	count=6
+#                 4550	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003e	count=7
+#                 4555	controller_tb.dut.F.WC	count=7
+#                 4555	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 4560	controller_tb.mem.RM	count=7
+#                 4560	controller_tb.dut.F	 STATE: Write
+#                 4560	WRITE
+#                 4560	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003e	count=0
+#                 4565	DataBus:zzzzzzzzzzzzzzzz
+# TRCD=         16
+# tccd:         20	bgprev=3	bg=3
+#                 4580	The cloumn address read is: 0101010010
+# Address Calculated:0018aac0
+# 
+#                 4580	controller_tb.dut.F	 STATE: Done
+#                 4580	DESELECT
+#                 4600	controller_tb.dut.F	 STATE: Done
+#                 4600	DESELECT
+#                 4600	controller_tb.dut.F	 STATE: Done
+#                 4600	DESELECT
+#                 4620	controller_tb.dut.F	 STATE: LoadTimer
+#                 4640	Request Issued to Address:00cd3040	 DONE=0
+# 
+#                 4640	controller_tb.dut.F	 STATE: Activate
+#                 4640	ACTIVATE	Row Address:000000001100110
+#                 4660	ROW:000000001100110	BANK:2	BG:1
+#                 4660	controller_tb.dut.F	 STATE: Wait
+#                 4660	DESELECT
+#                 4680	controller_tb.dut.F	 STATE: Wait
+#                 4680	DESELECT
+#                 4885	controller_tb.dut.F.WC	count=0
+#                 4885	DataBus:0000000000000059
+#                 4885	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000059	DataBus is:0000000000000059
+#                 4890	controller_tb.mem.RM	count=0
+#                 4890	controller_tb.mem.RM	READ	DataBus is:0000000000000059	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000059	count=1
+#                 4895	controller_tb.dut.F.WC	count=1
+#                 4895	DataBus:0000000000000000
+#                 4895	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 4900	controller_tb.mem.RM	count=1
+#                 4900	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000059	count=2
+#                 4905	controller_tb.dut.F.WC	count=2
+#                 4905	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 4910	controller_tb.mem.RM	count=2
+#                 4910	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000059	count=3
+#                 4915	controller_tb.dut.F.WC	count=3
+#                 4915	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 4920	controller_tb.mem.RM	count=3
+#                 4920	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000059	count=4
+#                 4925	controller_tb.dut.F.WC	count=4
+#                 4925	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 4930	controller_tb.mem.RM	count=4
+#                 4930	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000059	count=5
+#                 4935	controller_tb.dut.F.WC	count=5
+#                 4935	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 4940	controller_tb.mem.RM	count=5
+#                 4940	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000059	count=6
+#                 4945	controller_tb.dut.F.WC	count=6
+#                 4945	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 4950	controller_tb.mem.RM	count=6
+#                 4950	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000059	count=7
+#                 4955	controller_tb.dut.F.WC	count=7
+#                 4955	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 4960	controller_tb.mem.RM	count=7
+#                 4960	controller_tb.dut.F	 STATE: Write
+#                 4960	WRITE
+#                 4960	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000059	count=0
+#                 4965	DataBus:zzzzzzzzzzzzzzzz
+# TRCD=         16
+# tccd:         20	bgprev=3	bg=1
+#                 4980	The cloumn address read is: 0110000110
+# Address Calculated:00cd3040
+# 
+#                 4980	controller_tb.dut.F	 STATE: Done
+#                 4980	DESELECT
+#                 5000	controller_tb.dut.F	 STATE: Done
+#                 5000	DESELECT
+#                 5000	controller_tb.dut.F	 STATE: Done
+#                 5000	DESELECT
+#                 5020	controller_tb.dut.F	 STATE: LoadTimer
+#                 5040	Request Issued to Address:00a64840	 DONE=0
+# 
+#                 5040	controller_tb.dut.F	 STATE: Activate
+#                 5040	ACTIVATE	Row Address:000000001010011
+#                 5060	controller_tb.dut.F	 STATE: Wait
+#                 5060	DESELECT
+#                 5080	controller_tb.dut.F	 STATE: Wait
+#                 5080	DESELECT
+#                 5285	controller_tb.dut.F.WC	count=0
+#                 5285	DataBus:000000000000000d
+#                 5285	controller_tb.dut.F.WC	WRITE	DataHost is:000000000000000d	DataBus is:000000000000000d
+#                 5290	controller_tb.mem.RM	count=0
+#                 5290	controller_tb.mem.RM	READ	DataBus is:000000000000000d	DataHost is:0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000d	count=1
+#                 5295	controller_tb.dut.F.WC	count=1
+#                 5295	DataBus:0000000000000000
+#                 5295	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 5300	controller_tb.mem.RM	count=1
+#                 5300	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000d	count=2
+#                 5305	controller_tb.dut.F.WC	count=2
+#                 5305	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 5310	controller_tb.mem.RM	count=2
+#                 5310	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000d	count=3
+#                 5315	controller_tb.dut.F.WC	count=3
+#                 5315	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 5320	controller_tb.mem.RM	count=3
+#                 5320	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000d	count=4
+#                 5325	controller_tb.dut.F.WC	count=4
+#                 5325	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 5330	controller_tb.mem.RM	count=4
+#                 5330	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000d	count=5
+#                 5335	controller_tb.dut.F.WC	count=5
+#                 5335	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 5340	controller_tb.mem.RM	count=5
+#                 5340	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000d	count=6
+#                 5345	controller_tb.dut.F.WC	count=6
+#                 5345	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 5350	controller_tb.mem.RM	count=6
+#                 5350	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000d	count=7
+#                 5355	controller_tb.dut.F.WC	count=7
+#                 5355	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 5360	controller_tb.mem.RM	count=7
+#                 5360	controller_tb.dut.F	 STATE: Write
+#                 5360	WRITE
+#                 5360	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000d	count=0
+#                 5365	DataBus:zzzzzzzzzzzzzzzz
+# TRCD=         16
+# tccd:         20	bgprev=1	bg=1
+#                 5380	The cloumn address read is: 1001000011
+# Address Calculated:005c4840
+# 
+#                 5380	controller_tb.dut.F	 STATE: Done
+#                 5380	DESELECT
+#                 5400	controller_tb.dut.F	 STATE: Done
+#                 5400	DESELECT
+#                 5400	controller_tb.dut.F	 STATE: Done
+#                 5400	DESELECT
+#                 5420	controller_tb.dut.F	 STATE: LoadTimer
+#                 5440	Request Issued to Address:00a41c40	 DONE=0
+# 
+#                 5440	controller_tb.dut.F	 STATE: Activate
+#                 5440	ACTIVATE	Row Address:000000001010010
+#                 5460	controller_tb.dut.F	 STATE: Wait
+#                 5460	DESELECT
+#                 5480	controller_tb.dut.F	 STATE: Wait
+#                 5480	DESELECT
+#                 5685	controller_tb.dut.F.WC	count=0
+#                 5685	DataBus:0000000000000035
+#                 5685	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000035	DataBus is:0000000000000035
+#                 5690	controller_tb.mem.RM	count=0
+#                 5690	controller_tb.mem.RM	READ	DataBus is:0000000000000035	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000035	count=1
+#                 5695	controller_tb.dut.F.WC	count=1
+#                 5695	DataBus:0000000000000000
+#                 5695	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 5700	controller_tb.mem.RM	count=1
+#                 5700	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000035	count=2
+#                 5705	controller_tb.dut.F.WC	count=2
+#                 5705	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 5710	controller_tb.mem.RM	count=2
+#                 5710	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000035	count=3
+#                 5715	controller_tb.dut.F.WC	count=3
+#                 5715	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 5720	controller_tb.mem.RM	count=3
+#                 5720	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000035	count=4
+#                 5725	controller_tb.dut.F.WC	count=4
+#                 5725	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 5730	controller_tb.mem.RM	count=4
+#                 5730	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000035	count=5
+#                 5735	controller_tb.dut.F.WC	count=5
+#                 5735	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 5740	controller_tb.mem.RM	count=5
+#                 5740	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000035	count=6
+#                 5745	controller_tb.dut.F.WC	count=6
+#                 5745	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 5750	controller_tb.mem.RM	count=6
+#                 5750	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000035	count=7
+#                 5755	controller_tb.dut.F.WC	count=7
+#                 5755	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 5760	controller_tb.mem.RM	count=7
+#                 5760	controller_tb.dut.F	 STATE: Write
+#                 5760	WRITE
+#                 5760	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000035	count=0
+#                 5765	DataBus:zzzzzzzzzzzzzzzz
+# TRCD=         16
+# tccd:         20	bgprev=1	bg=1
+#                 5780	The cloumn address read is: 0011100011
+# Address Calculated:005c1c40
+# 
+#                 5780	controller_tb.dut.F	 STATE: Done
+#                 5780	DESELECT
+#                 5800	controller_tb.dut.F	 STATE: Done
+#                 5800	DESELECT
+#                 5800	controller_tb.dut.F	 STATE: Done
+#                 5800	DESELECT
+#                 5820	controller_tb.dut.F	 STATE: LoadTimer
+#                 5840	Request Issued to Address:00a2efc0	 DONE=0
+# 
+#                 5840	controller_tb.dut.F	 STATE: Activate
+#                 5840	ACTIVATE	Row Address:000000001010001
+#                 5860	controller_tb.dut.F	 STATE: Wait
+#                 5860	DESELECT
+#                 5880	controller_tb.dut.F	 STATE: Wait
+#                 5880	DESELECT
+#                 6085	controller_tb.dut.F.WC	count=0
+#                 6085	DataBus:000000000000000a
+#                 6085	controller_tb.dut.F.WC	WRITE	DataHost is:000000000000000a	DataBus is:000000000000000a
+#                 6090	controller_tb.mem.RM	count=0
+#                 6090	controller_tb.mem.RM	READ	DataBus is:000000000000000a	DataHost is:0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000a	count=1
+#                 6095	controller_tb.dut.F.WC	count=1
+#                 6095	DataBus:0000000000000000
+#                 6095	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 6100	controller_tb.mem.RM	count=1
+#                 6100	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000a	count=2
+#                 6105	controller_tb.dut.F.WC	count=2
+#                 6105	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 6110	controller_tb.mem.RM	count=2
+#                 6110	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000a	count=3
+#                 6115	controller_tb.dut.F.WC	count=3
+#                 6115	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 6120	controller_tb.mem.RM	count=3
+#                 6120	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000a	count=4
+#                 6125	controller_tb.dut.F.WC	count=4
+#                 6125	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 6130	controller_tb.mem.RM	count=4
+#                 6130	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000a	count=5
+#                 6135	controller_tb.dut.F.WC	count=5
+#                 6135	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 6140	controller_tb.mem.RM	count=5
+#                 6140	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000a	count=6
+#                 6145	controller_tb.dut.F.WC	count=6
+#                 6145	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 6150	controller_tb.mem.RM	count=6
+#                 6150	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000a	count=7
+#                 6155	controller_tb.dut.F.WC	count=7
+#                 6155	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 6160	controller_tb.mem.RM	count=7
+#                 6160	controller_tb.dut.F	 STATE: Write
+#                 6160	WRITE
+#                 6160	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000a	count=0
+#                 6165	DataBus:zzzzzzzzzzzzzzzz
+# TRCD=         16
+# tccd:         20	bgprev=1	bg=3
+#                 6180	The cloumn address read is: 1101111111
+# Address Calculated:0018efc0
+# 
+#                 6180	controller_tb.dut.F	 STATE: Done
+#                 6180	DESELECT
+#                 6200	controller_tb.dut.F	 STATE: Done
+#                 6200	DESELECT
+#                 6200	controller_tb.dut.F	 STATE: Done
+#                 6200	DESELECT
+#                 6220	controller_tb.dut.F	 STATE: LoadTimer
+#                 6240	Request Issued to Address:003ef640	 DONE=0
+# 
+#                 6240	controller_tb.dut.F	 STATE: Activate
+#                 6240	ACTIVATE	Row Address:000000000011111
+#                 6260	ROW:000000000011111	BANK:1	BG:1
+#                 6260	controller_tb.dut.F	 STATE: Wait
+#                 6260	DESELECT
+#                 6280	controller_tb.dut.F	 STATE: Wait
+#                 6280	DESELECT
+#                 6485	controller_tb.dut.F.WC	count=0
+#                 6485	DataBus:000000000000001f
+#                 6485	controller_tb.dut.F.WC	WRITE	DataHost is:000000000000001f	DataBus is:000000000000001f
+#                 6490	controller_tb.mem.RM	count=0
+#                 6490	controller_tb.mem.RM	READ	DataBus is:000000000000001f	DataHost is:0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001f	count=1
+#                 6495	controller_tb.dut.F.WC	count=1
+#                 6495	DataBus:0000000000000000
+#                 6495	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 6500	controller_tb.mem.RM	count=1
+#                 6500	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001f	count=2
+#                 6505	controller_tb.dut.F.WC	count=2
+#                 6505	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 6510	controller_tb.mem.RM	count=2
+#                 6510	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001f	count=3
+#                 6515	controller_tb.dut.F.WC	count=3
+#                 6515	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 6520	controller_tb.mem.RM	count=3
+#                 6520	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001f	count=4
+#                 6525	controller_tb.dut.F.WC	count=4
+#                 6525	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 6530	controller_tb.mem.RM	count=4
+#                 6530	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001f	count=5
+#                 6535	controller_tb.dut.F.WC	count=5
+#                 6535	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 6540	controller_tb.mem.RM	count=5
+#                 6540	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001f	count=6
+#                 6545	controller_tb.dut.F.WC	count=6
+#                 6545	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 6550	controller_tb.mem.RM	count=6
+#                 6550	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001f	count=7
+#                 6555	controller_tb.dut.F.WC	count=7
+#                 6555	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 6560	controller_tb.mem.RM	count=7
+#                 6560	controller_tb.dut.F	 STATE: Write
+#                 6560	WRITE
+#                 6560	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001f	count=0
+#                 6565	DataBus:zzzzzzzzzzzzzzzz
+# TRCD=         16
+# tccd:         20	bgprev=3	bg=1
+#                 6580	The cloumn address read is: 1110110011
+# Address Calculated:003ef640
+# 
+#                 6580	controller_tb.dut.F	 STATE: Done
+#                 6580	DESELECT
+# Test2
+# 
+#                 6600	controller_tb.dut.F	 STATE: Done
+#                 6600	DESELECT
+#                 6600	controller_tb.dut.F	 STATE: Done
+#                 6600	DESELECT
+#                 6620	controller_tb.dut.F	 STATE: LoadTimer
+#                 6640	controller_tb.dut.F	 STATE: LoadTimer
+#                 6640	controller_tb.dut.F	 STATE: Wait
+#                 6640	DESELECT
+#                 6660	controller_tb.dut.F	 STATE: Wait
+#                 6660	DESELECT
+#                 6680	controller_tb.dut.F	 STATE: Wait
+#                 6680	DESELECT
+#                 6720	controller_tb.dut.F	 STATE: Wait
+#                 6720	DESELECT
+#                 6720	controller_tb.dut.F	 STATE: Write
+#                 6720	WRITE
+# TRCD=         23
+# tccd:          8	bgprev=1	bg=0
+#                 6740	The cloumn address read is: 1001100000
+# Address Calculated:00b0cc00
+# 
+#                 6740	controller_tb.dut.F	 STATE: Done
+#                 6740	DESELECT
+#                 6760	controller_tb.dut.F	 STATE: Done
+#                 6760	DESELECT
+#                 6760	controller_tb.dut.F	 STATE: LoadTimer
+#                 6780	controller_tb.dut.F	 STATE: Wait
+#                 6780	DESELECT
+#                 6800	controller_tb.dut.F	 STATE: Wait
+#                 6800	DESELECT
+#                 6800	controller_tb.dut.F	 STATE: Wait
+#                 6800	DESELECT
+#                 6840	controller_tb.dut.F	 STATE: Wait
+#                 6840	DESELECT
+#                 6860	controller_tb.dut.F	 STATE: Write
+#                 6860	WRITE
+# TRCD=         29
+# tccd:          7	bgprev=0	bg=2
+#                 6880	controller_tb.dut.F	 STATE: Write
+#                 6880	WRITE
+#                 6880	controller_tb.dut.F	 STATE: Done
+#                 6880	DESELECT
+#                 6885	controller_tb.dut.F.WC	count=0
+#                 6885	DataBus:0000000000000051
+#                 6885	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000051	DataBus is:0000000000000051
+#                 6890	controller_tb.mem.RM	count=0
+#                 6890	controller_tb.mem.RM	READ	DataBus is:0000000000000051	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000051	count=1
+#                 6895	controller_tb.dut.F.WC	count=1
+#                 6895	DataBus:0000000000000000
+#                 6895	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 6900	controller_tb.mem.RM	count=1
+#                 6900	controller_tb.dut.F	 STATE: LoadTimer
+#                 6900	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000051	count=2
+#                 6905	controller_tb.dut.F.WC	count=2
+#                 6905	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 6910	controller_tb.mem.RM	count=2
+#                 6910	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000051	count=3
+#                 6915	controller_tb.dut.F.WC	count=3
+#                 6915	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 6920	controller_tb.dut.F	 STATE: LoadTimer
+#                 6920	controller_tb.mem.RM	count=3
+#                 6920	controller_tb.dut.F	 STATE: Wait
+#                 6920	DESELECT
+#                 6920	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000051	count=4
+#                 6925	controller_tb.dut.F.WC	count=4
+#                 6925	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 6930	controller_tb.mem.RM	count=4
+#                 6930	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000051	count=5
+#                 6935	controller_tb.dut.F.WC	count=5
+#                 6935	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 6940	controller_tb.mem.RM	count=5
+#                 6940	controller_tb.dut.F	 STATE: Wait
+#                 6940	DESELECT
+#                 6940	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000051	count=6
+#                 6945	controller_tb.dut.F.WC	count=6
+#                 6945	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 6950	controller_tb.mem.RM	count=6
+#                 6950	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000051	count=7
+#                 6955	controller_tb.dut.F.WC	count=7
+#                 6955	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 6960	controller_tb.dut.F	 STATE: Wait
+#                 6960	DESELECT
+#                 6960	controller_tb.mem.RM	count=7
+#                 6960	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000051	count=0
+#                 6965	DataBus:zzzzzzzzzzzzzzzz
+# Test3
+# 
+#                 7000	controller_tb.dut.F	 STATE: Wait
+#                 7000	DESELECT
+#                 7000	controller_tb.dut.F	 STATE: Write
+#                 7000	WRITE
+# TRCD=         35
+# tccd:          7	bgprev=2	bg=1
+#                 7020	The cloumn address read is: 0100110010
+# Address Calculated:00dba640
+# 
+#                 7020	controller_tb.dut.F	 STATE: Done
+#                 7020	DESELECT
+#                 7040	controller_tb.dut.F	 STATE: Done
+#                 7040	DESELECT
+#                 7040	controller_tb.dut.F	 STATE: LoadTimer
+#                 7045	controller_tb.dut.F.WC	count=0
+#                 7045	DataBus:0000000000000051
+#                 7045	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000051	DataBus is:0000000000000051
+#                 7050	controller_tb.mem.RM	count=0
+#                 7050	controller_tb.mem.RM	READ	DataBus is:0000000000000051	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000051	count=1
+#                 7055	controller_tb.dut.F.WC	count=1
+#                 7055	DataBus:0000000000000000
+#                 7055	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 7060	controller_tb.mem.RM	count=1
+#                 7060	controller_tb.dut.F	 STATE: Wait
+#                 7060	DESELECT
+#                 7060	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000051	count=2
+#                 7065	controller_tb.dut.F.WC	count=2
+#                 7065	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 7070	controller_tb.mem.RM	count=2
+#                 7070	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000051	count=3
+#                 7075	controller_tb.dut.F.WC	count=3
+#                 7075	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 7080	controller_tb.dut.F	 STATE: Wait
+#                 7080	DESELECT
+#                 7080	controller_tb.mem.RM	count=3
+#                 7080	controller_tb.dut.F	 STATE: Wait
+#                 7080	DESELECT
+#                 7080	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000051	count=4
+#                 7085	controller_tb.dut.F.WC	count=4
+#                 7085	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 7090	controller_tb.mem.RM	count=4
+#                 7090	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000051	count=5
+#                 7095	controller_tb.dut.F.WC	count=5
+#                 7095	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 7100	controller_tb.mem.RM	count=5
+#                 7100	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000051	count=6
+#                 7105	controller_tb.dut.F.WC	count=6
+#                 7105	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 7110	controller_tb.mem.RM	count=6
+#                 7110	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000051	count=7
+#                 7115	controller_tb.dut.F.WC	count=7
+#                 7115	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 7120	controller_tb.dut.F	 STATE: Wait
+#                 7120	DESELECT
+#                 7120	controller_tb.mem.RM	count=7
+#                 7120	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000051	count=0
+#                 7125	DataBus:zzzzzzzzzzzzzzzz
+#                 7140	controller_tb.dut.F	 STATE: Write
+#                 7140	WRITE
+# TRCD=         41
+# tccd:          7	bgprev=1	bg=1
+#                 7160	controller_tb.dut.F	 STATE: Write
+#                 7160	WRITE
+#                 7160	The cloumn address read is: 0100110110
+# Address Calculated:00dba600
+# 
+#                 7160	controller_tb.dut.F	 STATE: Done
+#                 7160	DESELECT
+#                 7180	controller_tb.dut.F	 STATE: LoadTimer
+#                 7185	controller_tb.dut.F.WC	count=0
+#                 7185	DataBus:000000000000004d
+#                 7185	controller_tb.dut.F.WC	WRITE	DataHost is:000000000000004d	DataBus is:000000000000004d
+#                 7195	controller_tb.dut.F.WC	count=1
+#                 7195	DataBus:0000000000000000
+#                 7195	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 7200	controller_tb.dut.F	 STATE: LoadTimer
+#                 7200	controller_tb.dut.F	 STATE: Wait
+#                 7200	DESELECT
+#                 7205	controller_tb.dut.F.WC	count=2
+#                 7205	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 7215	controller_tb.dut.F.WC	count=3
+#                 7215	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 7220	controller_tb.dut.F	 STATE: Wait
+#                 7220	DESELECT
+#                 7225	controller_tb.dut.F.WC	count=4
+#                 7225	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 7235	controller_tb.dut.F.WC	count=5
+#                 7235	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 7240	controller_tb.dut.F	 STATE: Wait
+#                 7240	DESELECT
+#                 7245	controller_tb.dut.F.WC	count=6
+#                 7245	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 7255	controller_tb.dut.F.WC	count=7
+#                 7255	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 7265	DataBus:zzzzzzzzzzzzzzzz
+#                 7280	controller_tb.dut.F	 STATE: Wait
+#                 7280	DESELECT
+#                 7280	controller_tb.dut.F	 STATE: Write
+#                 7280	WRITE
+# TRCD=         47
+# tccd:          7	bgprev=1	bg=1
+#                 7300	controller_tb.dut.F	 STATE: Done
+#                 7300	DESELECT
+#                 7320	controller_tb.dut.F	 STATE: Done
+#                 7320	DESELECT
+#                 7320	controller_tb.dut.F	 STATE: LoadTimer
+#                 7325	controller_tb.dut.F.WC	count=0
+#                 7325	DataBus:0000000000000052
+#                 7325	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000052	DataBus is:0000000000000052
+#                 7330	controller_tb.mem.RM	count=0
+#                 7330	controller_tb.mem.RM	READ	DataBus is:0000000000000052	DataHost is:zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz0000000000000052	count=1
+#                 7335	controller_tb.dut.F.WC	count=1
+#                 7335	DataBus:0000000000000000
+#                 7335	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 7340	controller_tb.mem.RM	count=1
+#                 7340	controller_tb.dut.F	 STATE: Wait
+#                 7340	DESELECT
+#                 7340	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz00000000000000000000000000000052	count=2
+#                 7345	controller_tb.dut.F.WC	count=2
+#                 7345	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 7350	controller_tb.mem.RM	count=2
+#                 7350	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz000000000000000000000000000000000000000000000052	count=3
+#                 7355	controller_tb.dut.F.WC	count=3
+#                 7355	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 7360	controller_tb.dut.F	 STATE: Wait
+#                 7360	DESELECT
+#                 7360	controller_tb.mem.RM	count=3
+#                 7360	controller_tb.dut.F	 STATE: Wait
+#                 7360	DESELECT
+#                 7360	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz0000000000000000000000000000000000000000000000000000000000000052	count=4
+#                 7365	controller_tb.dut.F.WC	count=4
+#                 7365	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 7370	controller_tb.mem.RM	count=4
+#                 7370	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz00000000000000000000000000000000000000000000000000000000000000000000000000000052	count=5
+#                 7375	controller_tb.dut.F.WC	count=5
+#                 7375	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 7380	controller_tb.mem.RM	count=5
+#                 7380	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000052	count=6
+#                 7385	controller_tb.dut.F.WC	count=6
+#                 7385	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 7390	controller_tb.mem.RM	count=6
+#                 7390	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:zzzzzzzzzzzzzzzz0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000052	count=7
+#                 7395	controller_tb.dut.F.WC	count=7
+#                 7395	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 7400	controller_tb.mem.RM	count=7
+#                 7400	controller_tb.mem.RM	READ	DataBus is:0000000000000000	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000052	count=0
+#                 7405	DataBus:zzzzzzzzzzzzzzzz
+#                 7420	controller_tb.dut.F	 STATE: Write
+#                 7420	WRITE
+# TRCD=         53
+# tccd:          7	bgprev=1	bg=3
+#                 7440	The cloumn address read is: 0100100110
+# Address Calculated:00d1a4c0
+# 
+#                 7440	controller_tb.dut.F	 STATE: Done
+#                 7440	DESELECT
+#                 7460	controller_tb.dut.F	 STATE: Done
+#                 7460	DESELECT
+#                 7465	controller_tb.dut.F.WC	count=0
+#                 7465	DataBus:0000000000000002
+#                 7465	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000002	DataBus is:0000000000000002
+#                 7470	controller_tb.mem.RM	count=0
+#                 7470	controller_tb.mem.RM	READ	DataBus is:0000000000000002	DataHost is:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002	count=1
+#                 7475	controller_tb.dut.F.WC	count=1
+#                 7475	DataBus:0000000000000000
+#                 7475	controller_tb.dut.F.WC	WRITE	DataHost is:0000000000000000	DataBus is:0000000000000000
+#                 7480	controller_tb.mem.RM	count=1
+# ** Warning: (vsim-PLI-8496) Memory.sv(162): $fatal : Argument number 1 is invalid. Expecting 0, 1, or 2. Using default value of 1
+# ** Fatal: Latch pointer not constant	LatchPointer:4
+#    Time: 7480 ns Started: 7460 ns  Scope: controller_tb.mem File: Memory.sv Line: 162
+# ** Note: $finish    : Memory.sv(162)
+#    Time: 7480 ns  Iteration: 3  Instance: /controller_tb/mem
+# Mem[0018aac0] = 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000059
+# Mem[0018efc0] = 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001f
+# Mem[003c42c0] = 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000018
+# Mem[003ef640] = 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000051
+# Mem[005c1c40] = 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000a
+# Mem[005c4840] = 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000035
+# Mem[005c6540] = 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000046
+# Mem[0093da00] = 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000061
+# Mem[00b0cc00] = 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000051
+# Mem[00b0f300] = 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000023
+# Mem[00b0fa00] = 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000048
+# Mem[00cd3040] = 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000d
+# Mem[00d1d9c0] = 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003e
+# Mem[00d1ecc0] = 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000c
+# Mem[00dba600] = 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002
+# Mem[00dba640] = 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000052
+# Mem[00dbc540] = 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000045
+# Mem[00e60880] = 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000062
+# Mem[00e61480] = 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001b
+# End time: 21:43:00 on Mar 18,2018, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1

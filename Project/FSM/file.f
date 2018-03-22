@@ -1,0 +1,9 @@
+Scheduler_BFM.sv	
+Controller_FSM.sv	
+ControllerIF.sv		
+Controller_tb.sv	
+DDR4Interface.sv	
+FSM_wrapper.sv		
+Memory.sv					
+ShiftReg.sv				
+Timer.sv					
